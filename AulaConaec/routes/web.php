@@ -16,6 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+//RUTA PARA EL PANEL ADMINISTRATIVO
+Route::get('Admin','Administrativos@index');
+//RUTA PARA EL PANEL DEL ALUMNO
+Route::get('Alumno','Alumnos@index');
+//RUTA PARA EL PANEL DEL MAESTRO
+Route::get('Maestro','Maestros@index');
+
+
+
 /*/Route::get('/index',function()
 {
 	return view('index');
